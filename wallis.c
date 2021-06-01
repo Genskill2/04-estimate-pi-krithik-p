@@ -25,3 +25,17 @@ int main(void) {
   }
 }
 
+float wallis_pi(int i){
+	double pi=2.0,x;
+	
+	for(int n=1;n<=i;n++)
+	{
+		x = (4.0*n*n)/((4.0*n*n)-1.0);
+		pi = pi*x;		
+		//printf("%f\n",x);
+	}	
+
+
+	return pi;
+
+}
